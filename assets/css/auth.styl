@@ -2,6 +2,7 @@
 
 @import '_base/variable'
 @import '_base/layout'
+@import '_base/button'
 
 #content
   position absolute
@@ -31,29 +32,18 @@
   form
     padding 0 30px 30px
     height 35px
-    &.error
-      input
-        border-color color-red
-      button
-        background color-red
-        &:hover, &:active
-          background darken(color-red, 20%)
     input
       border 1px solid color-border
       padding 0 10px
       width 280px
-      font 14px/35px font-default
       height 35px
       border-right none
+      &.error
+        border-color color-red
     button
       width 39px
       height 37px
       border none
-      background color-green
-      cursor pointer
-      position relative
-      &:hover, &:active
-        background darken(color-green, 20%)
       &:before
         width 100%
         height 100%

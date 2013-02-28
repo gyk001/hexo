@@ -9,9 +9,9 @@
   <body>
     <div id="content">
       <div class="logo"></div>
-      <form method="post" <% if (error){ %>class="error"<% } %>>
-        <input type="password" name="pass" placeholder="Password" class="alignleft">
-        <button type="submit" class="alignleft"></button>
+      <form method="post">
+        <input type="password" name="pass" placeholder="Password" class="alignleft<% if (error){ %> error<% } %>">
+        <button type="submit" class="alignleft hexo-button <% if (error){ %>red<% } else { %>green<% } %>"></button>
         <div class="clearfix"></div>
       </form>
     </div>

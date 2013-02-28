@@ -80,89 +80,51 @@ button::-moz-focus-inner {
 .hexo-button.grey:hover {
   background: #7a7a7a;
 }
-#content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -200px;
-  margin-top: -135px;
-  width: 400px;
-  background: #fff;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 15px #ddd;
-  box-shadow: 0 0 15px #ddd;
-}
-#content .logo {
-  width: 150px;
-  height: 150px;
-  margin: 40px auto 15px;
+#header {
+  height: 50px;
+  line-height: 50px;
+  background: #444;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 9999;
   position: relative;
 }
-#content .logo:before {
-  content: '\f023';
-  font: 150px/1 FontAwesome;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  color: #ccc;
+#header .new-post {
+  display: block;
+  width: 50px;
+  height: 50px;
 }
-#content form {
-  padding: 0 30px 30px;
-  height: 35px;
-}
-#content form input {
-  border: 1px solid #ddd;
-  padding: 0 10px;
-  width: 280px;
-  height: 35px;
-  border-right: none;
-}
-#content form input.error {
-  border-color: #ed5b65;
-}
-#content form button {
-  width: 39px;
-  height: 37px;
-  border: none;
-}
-#content form button:before {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  text-align: center;
-  content: '\f00c';
-  font: 20px/40px FontAwesome;
+#header .new-post:before {
+  content: '\f067';
+  font: 30px/55px FontAwesome;
   color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
-#footer {
+#post-list {
+  width: 300px;
+  height: 100%;
+  margin-top: 50px;
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
   position: fixed;
+  top: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  color: #999;
-  font-size: 0.9em;
 }
-#footer a {
-  color: #999;
-  float: left;
+#post-list form {
+  padding: 15px;
+  position: relative;
+}
+#post-list form input {
+  border: 1px solid #ddd;
+  width: 248px;
+  height: 25px;
+  line-height: 25px;
   padding: 0 10px;
-  border-right: 1px solid #fff;
-  border-left: 1px solid #ddd;
-}
-#footer a:first-child {
-  padding-left: 0;
-  border-left: none;
-}
-#footer a:last-child {
-  padding-right: 0;
-  border-right: none;
-}
-#footer .inner {
-  padding: 15px 20px;
 }
